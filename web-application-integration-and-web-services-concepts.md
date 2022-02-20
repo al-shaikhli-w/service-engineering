@@ -50,6 +50,7 @@ From the URL received, the Web server extracts any information it may need to pa
 and starts the program as a separate process . These programs can then be used to interact with the underlying middleware (see Figure 4.5).
 
 ![img/png](images/fig-4.5.png)
+
 For example, CGI programs often serve as an interface between a database and a Web server,
 allowing users to submit complex queries over the database through predefined URLs. The parameters of the query are embedded into the URL.
 When the Web server receives the request for the URL, it will run a program that will act as a client of the database and submit the query.
