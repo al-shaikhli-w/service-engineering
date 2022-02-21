@@ -41,14 +41,20 @@ To request a service, the client application sends a message (for exam- ple, a q
 The service provider will receive the message, perform appropriate actions depending on the message content (for example, determine a quote), and send another message with the required information back to the client.
 
 ### What support the class of middleware application?
+
 The class of middleware applications that support message-based interoperability is called message-oriented middleware (MOM).
 **Note that although we use the terms client and service provider**, this distinction is blurred in pure message-oriented interactions, at least from the perspective of the middleware.
 Indeed, to the MOM, all objects look alike; i.e., they send and receive messages.
 
 ### What is different between “Client” and “service providers”?
-The difference between "clients" and "service providers" is purely conceptual and can only be determined by humans who are aware of the semantics of the messages and of the message exchange.
 <br/>
+The difference between "clients" and "service providers" is purely conceptual and can only be determined by humans who are aware of the semantics of the messages and of the message exchange.
+
+
 This is different with respect to the other forms of interaction discussed earlier, where objects acting as clients invoke methods provided by other objects, acting as servers.
+
+
+
 ----------------------------
 ## 2- Explain differences and commonalities of middleware and EAI. (3, 3.1)
 
@@ -67,6 +73,7 @@ EAI can be seen as a step forward in the evolution of middleware, extending its 
 <br/>
 Such extensions involve some significant changes in the way the middleware is used, from the programming model to the marked shift toward asynchronous interaction.
 ### what happened When 3-tier architectures and middleware emerged?
+
 When 3-tier architectures and middleware emerged, they addressed two issues.
 * by separating the application logic layer from the resource management layer, the resulting architecture became more flexible.
   This approach gained even more relevance when systems began to be built on top of computer clusters instead of powerful servers, a trend that was markedly accentuated by the Web.
@@ -76,6 +83,7 @@ When 3-tier architectures and middleware emerged, they addressed two issues.
 As such, it is the natural location for the integration logic that brings different servers together. For instance, the accepted way to integrate different databases was to use a TP monitor.
 
 ### From a Set of Servers to a Multitude of Services (3.1.2)
+
 The use of middleware led to a further proliferation of services. In fact, 3-tier architectures facilitate the integration of different resource managers and, in general, the integration of services.
 <br> The functionality resulting from this integration can be then exposed as yet another service, which can in turn be integrated to form higher-level services.
 This process can go on ad infinitum, leading to a proliferation of services.
