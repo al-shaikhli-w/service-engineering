@@ -15,23 +15,6 @@ their application. In practice this has given rise to new Web technologies for w
 
 ![img/png](images/fig-4.3.png)
 
-### Applets:
-Applets are Java programs that can be embedded in an HTML document.
-When the document is downloaded, the program is executed by the Java virtual machine (JVM) present in the browser.
-Hence, the way to turn the browser into a client is to send the client code as an applet.
-This, of course, suffers from the limitation of having to download the code every time the client is used.
-Nevertheless, for applications based on thin clients, it is a very common solution.
-<br>
-Applets have the significant advantage of turning a Web browser into an application-specific client without complex configuration or installation procedures.
-However, because applets exist only for the lifetime of a particular browser instance, they are transient,
-and are thus inadequate for supporting complex client code or frequent interactions.
-An alternative is to use a specialized client that is not based on a browser but contains the necessary code to interact with a Web server through HTTP.
-Such an approach does not have any of the limitations of applets but requires a specialized client.
-In this case, the advantages and disadvantages are identical to those of client/server systems.
-
-
-![img/png](images/fig-4.4.png)
-
 ### CGI:
 
 If we view Web servers as interfaces to distributed information systems, they must be able to serve up content from dynamic sources
@@ -84,6 +67,23 @@ Session tracking, sharing of database connections, and other typical optimizatio
 
 ![img/png](images/fig-4.6.png)
 
+
+### Applets:
+Applets are Java programs that can be embedded in an HTML document.
+When the document is downloaded, the program is executed by the Java virtual machine (JVM) present in the browser.
+Hence, the way to turn the browser into a client is to send the client code as an applet.
+This, of course, suffers from the limitation of having to download the code every time the client is used.
+Nevertheless, for applications based on thin clients, it is a very common solution.
+<br>
+Applets have the significant advantage of turning a Web browser into an application-specific client without complex configuration or installation procedures.
+However, because applets exist only for the lifetime of a particular browser instance, they are transient,
+and are thus inadequate for supporting complex client code or frequent interactions.
+An alternative is to use a specialized client that is not based on a browser but contains the necessary code to interact with a Web server through HTTP.
+Such an approach does not have any of the limitations of applets but requires a specialized client.
+In this case, the advantages and disadvantages are identical to those of client/server systems.
+
+
+![img/png](images/fig-4.4.png)
 
 --------------------------------------------------------------
 
